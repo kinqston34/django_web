@@ -1,0 +1,33 @@
+
+.container {
+    height: 100%;
+    margin-top: 50px;
+    border: 2px solid violet; 
+    text-align: center;
+}
+
+.form-row {
+    font-size: 20px;
+    color: cadetblue;
+    background-color: papayawhip;  
+}
+.table_list {
+    width: 50%;
+    height: 100%;
+    background-color: lightseagreen;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    color:lightcyan;
+
+}
+
+.thead {
+    font-size: 30px;
+      
+}
+
+.tbody {
+    font-size: 20px;
+}
+

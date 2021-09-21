@@ -1,0 +1,13 @@
+{% extends 'base2.html' %}
+
+{% block content %}
+
+<h3>是否確定刪除{{ customer.name }}?</h3>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="submit" class="btn btn-success" value="確定">
+    <a href="{% url 'Index' %}" class="btn btn-warning"><input type="button" value="取消"></a>
+</form>
+
+{% endblock  %}

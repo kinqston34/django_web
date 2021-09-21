@@ -1,0 +1,20 @@
+{% extends 'base2.html' %}
+
+{% block content %}
+
+<h3>修改會員資料</h3>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+        <div class="form-group col-md-6">
+
+        {{ form }}
+
+        <br/>
+        <input type="submit" class="btn btn-success" value="更新">
+        <a href="{% url 'Index' %}"><input type="button" class="btn btn-warning" value="取消更新"></a>
+        </div>
+    </div>
+</form>
+{% endblock  %}

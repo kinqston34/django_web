@@ -1,0 +1,45 @@
+{% extends 'base2.html' %}
+{% block title%}建立詳細資料{% endblock %}
+{% block content %}
+<h2> 親愛的{{ customer.name }}顧客您好 <br>
+以下是為了聯絡到您，所以做的基本資料詢問</h2>
+
+<p>{{ message }}</p><br>
+<form action="" method="POST">
+    {% csrf_token %}
+
+    <div class='form-row'>
+
+        <div class="form-group col-2">
+            <label>{{ form.line_id.label}}</label>
+            {{form.line_id}}
+        </div>
+        <br>
+        <div class="form-group col-3">
+            <label>{{ form.tel.label}}</label>
+            {{form.tel}}
+        </div>
+        <br>
+        <div class="form-group col-4">
+            <label>{{ form.email.label}}</label>
+            {{form.email}}
+        </div>
+        <br>
+        <div class="form-group col-5">
+            <label>{{ form.create_time.label}}</label>
+            {{form.create_time}}
+        </div>
+        <br>
+        <div class="form-group col-6">
+            <label>{{ form.suggest.label}}</label><br>
+            {{form.suggest}}
+        </div>
+        <br>
+
+        <div class="form-group col-7" >
+            <input type="submit" class="btn btn-success" style="margin-top:30px;" value="儲存">
+        <div>
+    </div>
+</form>
+
+{% endblock  %}

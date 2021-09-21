@@ -1,0 +1,8 @@
+squlit:
+python manage.py makemigrations  生成資料表檔案
+python manage.py migrate 匯入資料格式
+python manage.py sqlmigrate posts 0001 (觀看資料庫程式碼)
+python manage.py createsuperuser(建立帳號密碼)
+
+就可以到網站去 網址/admin/ 
+去登入進到後台管理

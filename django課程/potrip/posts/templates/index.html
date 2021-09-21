@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>景點</title>
+</head>
+<body>
+    <table class="table">
+    <thead>
+        <tr>
+            <th>景點名稱</th>
+            <th>景點位置</th>
+            <th>作者</th>
+        </tr>
+    </thead>
+        <tbody>
+            {% for post in posts%}
+            <tr>
+                <td>{{ post.subject }}</td>
+                <td>{{ post.location }}</td>
+                <td>{{ post.author}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

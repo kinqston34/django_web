@@ -1,0 +1,9 @@
+1. STATIC_URL:
+設定static files的URL前綴，按照設定的前綴+路徑、檔名產生URL，以本文example.png為例，STATIC_URL='/static/'，因此透過URL 'http://your-ip-address/static/images/example.png'檢視example.png這個檔案。
+
+2. STATICFILES_DIRS:
+開發階段，static files存放的位置，可以寫入多個路徑。
+
+3. STATIC_ROOT:
+debug = False
+正式環境中，透過collectstatic指令，將STATICFILES_DIRS設定目錄下檔案，收錄到STATIC_ROOT指定目錄。

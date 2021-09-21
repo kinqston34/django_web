@@ -1,0 +1,4 @@
+在 vs 
+get clone <github連結>
+git config user.name <github專案名>
+git config user.email <github email>

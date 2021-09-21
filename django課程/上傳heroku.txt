@@ -1,0 +1,27 @@
+1. pip freeze > requirements.txt 製作requirments.txt
+2. 整理requirements.txt(
+新增
+gunicorn==19.6.0
+django-heroku
+)
+
+3. setting
+(1) debug = False
+(2) ALLOWED_HOSTS = ['*']
+(3) MIDDLEWARE 新增 'whitenoise.middleware.WhiteNoiseMiddleware',
+(4) LANGUAGE_CODE = 'en-us'
+
+    TIME_ZONE = 'UTC'
+
+
+4. python manage.py collectstatic
+
+5. 開始herouku指令
+
+6. heroku ps:scale web=1
+
+7. heroku run python manage.py makemigrations
+heroku run python manage.py migrate
+heroku run python manage.py createsuperuser
+
+
